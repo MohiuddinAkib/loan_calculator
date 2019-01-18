@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loan calculator</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <div class="card">
+            <div class="card-header">
+              <p class="card-header-title">Loan calculator</p>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <!-- INPUT FORM HERE -->
+                <form id="form">
+                  <div class="field">
+                    <label for="loan-amount" class="label">Loan amount</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <span class="is-small is-left icon">
+                        <i class="fas fa-dollar-sign"></i>
+                      </span>
+
+                      <input type="text" class="input" id="loan-amount">
+
+                      <span class="icon is-small is-right">
+                        <i></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="interest-amount" class="label">Annual interest</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <span class="is-small is-left icon">
+                        <i class="fas fa-percentage"></i>
+                      </span>
+
+                      <input type="text" class="input" id="interest-amount">
+
+                      <span class="icon is-small is-right">
+                        <i></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="years" class="label">Repayment years</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <span class="is-small is-left icon">
+                        <i class="fas fa-dollar-sign"></i>
+                      </span>
+
+                      <input type="text" class="input" id="years">
+
+                      <span class="is-small icon is-right">
+                        <i></i>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="control">
+                    <button class="button is-dark is-fullwidth">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <!-- IMAGE HERE -->
+
+          <!-- RESULT -->
+          <div id="results">
+            <article class="message is-success">
+              <div class="message-header">
+                <p>Result</p>
+                <button class="delete" aria-label="delete"></button>
+              </div>
+              <div class="message-body">
+                <div class="field">
+                  <label for="monthly-payment" class="label">Monthly payment</label>
+                  <div class="control">
+                    <input type="text" class="input" id="monthly-payment" readonly>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="total-payment" class="label">Total payment</label>
+                  <div class="control">
+                    <input type="text" class="input" id="total-payment" readonly>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="total-interest" class="label">Total interest</label>
+                  <div class="control">
+                    <input type="text" class="input" id="total-interest" readonly>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
